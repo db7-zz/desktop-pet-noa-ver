@@ -1,0 +1,27 @@
+{
+  "name": "nuoge-desktop-pet",
+  "version": "1.0.0",
+  "description": "诺哥 - 独立、纯本地的 Windows 桌宠",
+  "main": "src/main.js",
+  "author": "Nuoge Desktop Pet contributors",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "pack": "electron-builder --win portable",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.nuoge.desktop-pet",
+    "productName": "诺哥桌宠",
+    "asar": true,
+    "files": ["src/**/*", "assets/**/*", "LICENSE", "README.md"],
+    "directories": { "output": "release" },
+    "win": { "target": [{ "target": "portable", "arch": ["x64"] }] },
+    "portable": { "artifactName": "Nuoge-Desktop-Pet-${version}-portable.exe" }
+  }
+}

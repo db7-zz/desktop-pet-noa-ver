@@ -1,0 +1,18 @@
+{
+  "id": "nuoge",
+  "name": "诺哥",
+  "window": { "width": 240, "height": 280, "margin": 24 },
+  "defaultScale": "medium",
+  "defaultDock": "bottom-right",
+  "hitTestAlpha": 24,
+  "animations": {
+    "idle": { "fps": 3, "loop": true, "frames": ["idle/frame-01.png", "idle/frame-02.png", "idle/frame-03.png", "idle/frame-04.png"] },
+    "idle_b": { "fps": 3, "loop": true, "frames": ["idle_b/frame-01.png", "idle_b/frame-02.png", "idle_b/frame-03.png", "idle_b/frame-04.png"] },
+    "happy": { "fps": 6, "loop": false, "next": "idle", "frames": ["happy/frame-01.png", "happy/frame-02.png", "happy/frame-03.png", "happy/frame-04.png"] },
+    "sleep": { "fps": 2, "loop": true, "frames": ["sleep/frame-01.png", "sleep/frame-02.png", "sleep/frame-03.png", "sleep/frame-04.png"] },
+    "wake": { "fps": 6, "loop": false, "next": "idle", "frames": ["wake/frame-01.png", "wake/frame-02.png", "wake/frame-03.png", "wake/frame-04.png"] },
+    "working": { "fps": 4, "loop": true, "frames": ["working/frame-01.png", "working/frame-02.png", "working/frame-03.png", "working/frame-04.png"] },
+    "success": { "fps": 5, "loop": false, "next": "idle", "frames": ["success/frame-01.png", "success/frame-02.png", "success/frame-03.png", "success/frame-04.png"] },
+    "error": { "fps": 3, "loop": true, "frames": ["error/frame-01.png", "error/frame-02.png", "error/frame-03.png", "error/frame-04.png"] }
+  }
+}
